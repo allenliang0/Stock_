@@ -42,13 +42,13 @@ class IBClient(EWrapper, EClient):
 client = IBClient(default_host,trading_port,default_client_id)
 time.sleep(1)
 contract = Contract()
-contract.symbol = 'GOOG'
+contract.symbol = init_symbol
 contract.secType = 'STK'
 contract.exchange = 'SMART'
 contract.currency = 'USD'
 what_to_show = 'TRADES'
 
 client.reqHistoricalData(
-    2, contract, '', '30 D', '5 mins', what_to_show, True, 2, False, []
+    2, contract, '', '10 D', '1 min', what_to_show, True, 2, False, []
 )
 time.sleep(1)
