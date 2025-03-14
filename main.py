@@ -42,7 +42,7 @@ class IBClient(EWrapper, EClient):
 client = IBClient(default_host,trading_port,default_client_id)
 time.sleep(1)
 contract = Contract()
-contract.symbol = 'TSLA'
+contract.symbol = 'GOOG'
 contract.secType = 'STK'
 contract.exchange = 'SMART'
 contract.currency = 'USD'
